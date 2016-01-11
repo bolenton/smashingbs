@@ -4,27 +4,27 @@
 <head>
 
     <title>Smashing HTML5!</title>
-
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    
     <!--Web page custom custom css-->
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
-<body>
+<body class="container-fluid ">
 
-    <main class="container">
+    <main class="col-lg-5 col-centered">
 
-        <header>
+        <header class="main-page-title">
             <h1>Smashing HTML5!
                 <span>HTML5 in the year<del>2022</del>2009</span>
             </h1>
         </header>
 
-        <nav class="container">
-            <ul class="nav nav-pills" role="tablist">
+        <nav class="container-fluid">
+            <ul class="nav nav-pills" >
                 <li class="active"><a href="#home">home</a></li>
                 <li><a href="#">portfolio</a></li>
                 <li><a href="#contact">blog</a></li>
@@ -32,77 +32,94 @@
             </ul>
         </nav>
 
-        <section>
+        <section class="row">
 
-            <article>
-
-                <h2>Featured Article <span>HTML5 in Smashing Magazine!</span></h2>
-                <p>
+            <article class="col-sm-12">
+                
+                <div class="col-sm-7">
+                <h2 class="primary-color">Featured Article 
+                    <span>HTML5 in Smashing Magazine!</span></h2>
+                
+                <p class="pad-para">
                     Discover how to use Graceful Degradation and Progressive Enhancement techniques to achieve an outstanding, cross-browser
-                    <a href="#"> HTML5</a> and <a href="#">CSS3</a> website today!
+                    <a class="primary-color" href="#"> HTML5</a> and <a class="primary-color" href="#">CSS3</a> website today!
                 </p>
-                <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/temp/sm-logo.gif">
-
+                </div>
+                
+                <div class="featured-img col-sm-" >
+                    <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/temp/sm-logo.gif">
+                </div>
+                    
             </article>
+            
+            
+
+            
 
         </section>
 
-        <section>
+        <section class="row  sec-section" >
 
-            <article>
-                <div>
-                    <p>10th October 2005
-                        <br>By <a href="">Enrique Ramirez</a></p>
+            <article class="col-sm-12 secondary-articles add-border">
+                
+                <div class="col-sm-3 first-div">
+                    <p class="data">10th October 2005
+                        <br>By <a class="primary-color" href="">Enrique Ramirez</a></p>
                 </div>
 
-                <div>
-                    <h2>This be the title</h2>
+                <div class="col-sm-9 sec-div" >
+                    <h3 class="primary-color">This be the title</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
                         tellus.
                     </p>
                 </div>
+                
             </article>
 
-            <article>
-                <div>
-                    <p>10th October 2005
-                        <br>By <a href="">Enrique Ramirez</a></p>
+            <article class="col-sm-12 secondary-articles add-border">
+                
+                <div class="col-sm-3">
+                    <p class="data">10th October 2005
+                        <br>By <a class="primary-color" href="">Enrique Ramirez</a></p>
                 </div>
 
-                <div>
-                    <h2>This be the title</h2>
+                <div class="col-sm-9">
+                    <h3 class="primary-color">This be the title</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
                         tellus.
                     </p>
                 </div>
+                
             </article>
 
-            <article>
-                <div>
-                    <p>10th October 2005
-                        <br>By <a href="">Enrique Ramirez</a></p>
+            <article class="col-sm-12 secondary-articles no-border">
+                
+                <div class="col-sm-3">
+                    <p class="data">10th October 2005
+                        <br>By <a class="primary-color" href="">Enrique Ramirez</a></p>
                 </div>
 
-                <div>
-                    <h2>This be the title</h2>
+                <div class="col-sm-9">
+                    <h3 class="primary-color">This be the title</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
                         tellus.
                     </p>
                 </div>
+                
             </article>
 
         </section>
 
 
         <footer>
-            <nav>
-                <h2>blogroll</h2>
+            <nav class="list-parent-div" id="list-left">
+                <h2 class="primary-color">blogroll</h2>
                 <ul>
                     <li>HTML5 Doctor</li>
                     <li>W3C</li>
@@ -125,8 +142,8 @@
                 </ul>
             </nav>
 
-            <nav>
-                <h2>social</h2>
+            <nav class="social list-child-div" id="list-right">
+                <h2 class="primary-color">social</h2>
                 <ul>
                     <li><img src="images/delicious.png">&nbsp;<span>delicious</span></li>
                     <li><img src="images/digg.png">&nbsp;digg</li>
@@ -141,7 +158,7 @@
             <section>
 
                 <article>
-                    <h2>Smashing Magazine</h2>
+                    <h2 class="primary-color">Smashing Magazine</h2>
                     <span>Amazing Magazine</span>
                     <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/avatar.gif ">
                     <p>
@@ -151,18 +168,16 @@
                 </article>
 
             </section <div>
-            <p>2005-2009 <a href=" "> Smashing Magazine</a>.</p>
+            <p>2005-2009 <a class="primary-color" href="#"> Smashing Magazine</a>.</p>
 
         </footer>
 
     </main>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
