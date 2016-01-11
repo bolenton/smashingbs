@@ -25,12 +25,9 @@ span {
 }
 
 .nav-pills{
-    background-color: black;
-    
-    
+    background-color: black;   
     margin-top: 15px;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
 }
 
 .nav-pills a {
@@ -110,13 +107,12 @@ section {
     padding-bottom: 30px;
 }
 
+
 .sec-section  {
     padding: 0 10px;
 }
 
-.sec-div{
 
-}
 
 
 
