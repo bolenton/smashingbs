@@ -15,10 +15,7 @@ a {
     list-style: none;
 }
 
-.container{
-    
-    margin: auto;
-}
+
 
 header{
     margin-top: 15px;
@@ -160,7 +157,41 @@ nav ul li{
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
+    .container{
+        background-color: yellow;
+        width: 100%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .container{
+        background-color: blue;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        background-color: green;
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        background-color: red;
+        width: 45%;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
