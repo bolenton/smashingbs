@@ -1,0 +1,159 @@
+
+/*Global*/
+
+body {
+    background-color: #F5F4F0; 
+    font-style: normal;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    color: #C74451
+}
+
+.remove-bullet {
+    list-style: none;
+}
+
+.container{
+    width: 44%;
+}
+
+header{
+    margin-top: 15px;
+}
+
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color:black;
+}
+
+h4 {
+    margin: 0;
+    color:black;
+}
+
+.primary-color  {
+    color: #C74451;
+}
+
+span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;       
+}
+
+
+
+/* Header & Main Navagation */
+header a{
+    text-decoration: none;
+}
+
+header:hover h1{
+    color: #C74451;
+    text-decoration: none;
+}
+header:hover h4{
+    color: #C74451;
+}
+
+header:hover a{
+    text-decoration: none;
+}
+
+
+
+
+.active {
+    background-color: #C74451;
+}
+
+nav{
+    margin:25px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li a{
+    color: #fff;
+}
+nav ul li{
+    padding: 5px;
+    margin: 5px;
+    float: left; 
+}
+
+/* Featured Article */
+.link-highlight-hover a:hover{
+    background-color: #C74451;
+    color: white;
+    height: 25px;
+    width: 271px;
+    text-shadow: 2px 2px black; 
+    text-decoration: none;
+}
+
+.secondary-articles{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+
+/*section#Main > article:nth-child(n+2)
+{
+    border-top: 1px solid #FF0;
+}
+*/
+
+.featured-article{
+    background: white;
+    margin:25px 0;
+    border-radius: 8px;    
+}
+
+.article {
+    background: white;
+    
+    margin-right:0px !important;
+    margin-left:0px;   
+}
+
+.fix-top-radius{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.fix-bottom-radius{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.article .highlight:hover h2{
+    color: #F6CF74;
+    text-shadow: 2px 2px black; 
+}
+
+.add-border {
+   width: 100%;
+   padding-bottom: 1px;
+   padding-top: 1px;
+   border-bottom-style: inset;
+   border-bottom-width: 1px;   
+   border-bottom-color:  #F4E3E3;
+}
+
+.no-border {
+    padding-bottom: 30px;
+}
+
+/* Bottom Nav & Footer  */
+.black-text a{
+    color: black;
+}

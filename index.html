@@ -3,152 +3,200 @@
 
 <head>
     <title>Smashing HTML5!</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="styles.css" />
+    <title>Gamma: Photo Sharing App</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container">
-        <header class="main-page-title">
-            <h1>Smashing HTML5!
-                <span>HTML5 in the year<del>2022</del>2009</span>
-            </h1>
+    <main class="container">
+        <!--Header-->
+        <header>
+            <a href="#">
+                <h1>Smashing HTML5!</h1>
+                <h4>HTML5 in the year<del>2022</del>2009</h4>
+            </a>
         </header>
-        <nav class="row">
-            <ul class="nav nav-pills">
-                <li class="col-xs-2 active"><a href="#home">home</a></li>
-                <li class="col-xs-2"><a href="#">portfolio</a></li>
-                <li class="col-xs-2"><a href="#contact">blog</a></li>
-                <li class="col-xs-2"><a href="#contact">contact</a></li>
+
+        <!--Top Navigation-->
+        <nav class="navbar navbar-inverse">
+            <ul class="remove-bullet">
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </nav>
-        <section class="row">
-                <div class="col-xs-6">
-                    <h2 class="primary-color">Featured Article</h2> 
-                    <h3><a href="#">HTML5 in Smashing Magazine!</a></h3>
-                    <p class="pad-para">
+
+        <!-- Main Content Sections-->
+        <section id="featured">
+            <div class="row featured-article link-highlight-hover">
+                <div class="col-md-8">
+                    <h3 class="primary-color">Featured Article</h3>
+                    <h4><a href="#">HTML5 in Smashing Magazine!</a></h4>
+                    <p>
                         Discover how to use Graceful Degradation and Progressive Enhancement techniques to achieve an outstanding, cross-browser
                         <a class="primary-color" href="#"> HTML5</a> and <a class="primary-color" href="#">CSS3</a> website
                         today!
                     </p>
                 </div>
-                <div class="featured-img col-xs-5">
+                <div class="col-md-4">
                     <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/temp/sm-logo.gif">
                 </div>
-        </section>
-        <section class="row  sec-section">
-            <article class="col-xs-12 secondary-articles add-border">
-                <div class="col-xs-3 first-div">
-                    <p class="data">10th October 2005
-                        <br>By <a class="primary-color" href="#">Enrique Ramirez</a>
-                    </p>
-                </div>
-                <div class="col-xs-9 sec-div">
-                    <h3 class="primary-color">This be the title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec
-                        et leo. Ut ut malesuada tellus.
-                    </p>
-                </div>
-            </article>
-            <article class="col-xs-12 secondary-articles add-border">
-                <div class="col-xs-3 first-div">
-                    <p class="data">10th October 2005
-                        <br>By <a class="primary-color" href="#">Enrique Ramirez</a>
-                    </p>
-                </div>
-                <div class="col-xs-9 sec-div">
-                    <h3 class="primary-color">This be the title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec
-                        et leo. Ut ut malesuada tellus.
-                    </p>
-                </div>
-            </article>
-            <article class="col-xs-12 secondary-articles add-border">
-                <div class="col-xs-3 first-div">
-                    <p class="data">10th October 2005
-                        <br>By <a class="primary-color" href="#">Enrique Ramirez</a>
-                    </p>
-                </div>
-                <div class="col-xs-9 sec-div">
-                    <h3 class="primary-color">This be the title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
-                        justo <a class="primary-color" href="">non sapien</a> dapibus blandit nec
-                        et leo. Ut ut malesuada tellus.
-                    </p>
-                </div>
-            </article>
+            </div>
         </section>
 
-        <nav>
-            <h2 class="primary-color">blogroll</h2>
-            <ul>
-                <li>HTML5 Doctor</li>
-                <li>W3C</li>
-                <li>HTML5 Doctor</li>
-                <li>W3C</li>
-                <li>HTML5 Doctor</li>
-                <li>W3C</li>
-                <li>HTML5 Spec (working draft)</li>
-                <li>Wordpress</li>
-                <li>HTML5 Spec (working draft)</li>
-                <li>Wordpress</li>
-                <li>HTML5 Spec (working draft)</li>
-                <li>Wordpress</li>
-                <li>Smashing Magazine</li>
-                <li>Wikipedia</li>
-                <li>Smashing Magazine</li>
-                <li>Wikipedia</li>
-                <li>Smashing Magazine</li>
-                <li>Wikipedia</li>
-            </ul>
-        </nav>
+        <!--Middle Content">-->
+        <section id="main">
+            <div class="row article fix-top-radius">
+                <div class="col-md-4">
+                    <p>10th October 2005
+                        <br>By <a href="#">Enrique Ramirez</a>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h3> <a href="#">This be the title</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
+                        justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        tellus.
+                    </p>
+                </div>
+            </div>
 
-        <nav>
-            <h2 class="primary-color">social</h2>
-            <ul>
-                <li><img src="images/delicious.png">&nbsp;<span>delicious</span></li>
-                <li><img src="images/digg.png">&nbsp;digg</li>
-                <li><img src="images/facebook.png">&nbsp;facebook</li>
-                <li><img src="images/lastfm.png">&nbsp;last.fm</li>
-                <li><img src="images/rss.png">&nbsp;rss</li>
-                <li><img src="images/twitter.png">&nbsp;twitter</li>
-            </ul>
-        </nav>
+            <div class="row article">
+                <div class="col-md-4">
+                    <p>10th October 2005
+                        <br>By <a href="#">Enrique Ramirez</a>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h3> <a href="#">This be the title</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
+                        justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        tellus.
+                    </p>
+                </div>
+            </div>
 
-        <section>
-            <article>
-                <h2 class="primary-color">Smashing Magazine</h2>
-                <span>Amazing Magazine</span>
-                <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/avatar.gif ">
-                <p>
-                    Smashing Magazine is a website and blog that offers resources and advice to web developers and web designers. It was founded
-                    by Sven Lennartz and Vitaly Friedman.
-                </p>
-            </article>
+
+            <div class="row article fix-bottom-radius">
+                <div class="col-md-4">
+                    <p>10th October 2005
+                        <br>By <a href="#">Enrique Ramirez</a>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h3> <a href="#">This be the title</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et
+                        justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada
+                        tellus.
+                    </p>
+                </div>
+            </div>
+
         </section>
-
+        <!--Bottom Content & Footer-->
         <footer>
-            <p>2005-2009 <a class="primary-color" href="#"> Smashing Magazine</a>.</p>
+            <div>
+                <div class="row link-highlight-hover remove-bullet">
+                    <div class="col-md-9">
+                        <h2 class="primary-color">blogroll</h2>
+                        <div class="row black-text">
+                            <div class="col-md-4">
+                                <ul class="remove-bullet">
+                                    <li><a href="#">HTML5 Doctor</a></li>
+                                    <li><a href="#">W3C</a></li>
+                                    <li><a href="#">HTML5 Doctor</a></li>
+                                    <li><a href="#">W3C</a></li>
+                                    <li><a href="#">HTML5 Doctor</a></li>
+                                    <li><a href="#">W3C</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="remove-bullet">
+                                    <li><a href="#">HTML5 Spec (working draft)</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">HTML5 Spec (working draft)</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">HTML5 Spec (working draft)</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="remove-bullet">
+                                    <li><a href="#">Smashing Magazine</a></li>
+                                    <li><a href="#">Wikipedia</li></a></li>
+                                    <li><a href="#">Smashing Magazine</a></li>
+                                    <li><a href="#">Wikipedia</li></a></li>
+                                    <li><a href="#">Smashing Magazine</a></li>
+                                    <li><a href="#">Wikipedia</li></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="primary-color">social</h2>
+                        <ul class="remove-bullet black-text">
+                            <li>
+                                <a href="#"><img src="images/delicious.png">&nbsp;delicious</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/digg.png">&nbsp;digg</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/facebook.png">&nbsp;facebook</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/lastfm.png">&nbsp;last.fm</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/rss.png">&nbsp;rss</li>
+                            <li>
+                                <a href="#"><img src="images/twitter.png">&nbsp;twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <section>
+                <div class="article">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="primary-color link-highlight-hover"><a href="#">Smashing Magazine</a></h2>
+                            <span>Amazing Magazine</span>
+                        </div>
+                        <div class="col-md-1">
+                            <img src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/smashing-html5/files/images/avatar.gif ">
+                        </div>
+                        <div class="col-md-7">
+                            <p>
+                                Smashing Magazine is a website and blog that offers resources and advice to web developers and web designers. It was founded
+                                by Sven Lennartz and Vitaly Friedman.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <p class="link-highlight-hover">2005-2009 <a class="primary-color" href="#">Smashing Magazine</a>.</p>
         </footer>
     </main>
 
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
