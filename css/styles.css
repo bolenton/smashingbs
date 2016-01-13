@@ -16,7 +16,8 @@ a {
 }
 
 .container{
-    width: 44%;
+    
+    margin: auto;
 }
 
 header{
@@ -156,4 +157,10 @@ nav ul li{
 /* Bottom Nav & Footer  */
 .black-text a{
     color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
 }
