@@ -52,7 +52,7 @@ span{
 }
 
 .clear-fix{
-       content: " "; /* Older browser do not support empty content */
+   content: " "; /* Older browser do not support empty content */
    visibility: hidden;
    display: block;
    height: 0;
