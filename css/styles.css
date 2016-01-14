@@ -1,13 +1,14 @@
-
 /*Global*/
 
-body {
+body{
     background-color: #F5F4F0; 
     font-style: normal;
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, 
+    'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
 }
 
-a {
+a{
     color: #C74451
 }
 
@@ -17,9 +18,10 @@ a {
 
 header{
     margin-top: 13px;
+    margin-bottom: 20px
 }
 
-h1 {
+h1{
     
     font-size: 52px;
     font-weight: 600;
@@ -31,7 +33,7 @@ h4{
     font-size: 19px;
 }
 
-h5 {
+h5{
     font-size: 19px;
     padding-top: 8px;
     margin: 0;
@@ -42,14 +44,22 @@ h5 {
     color: #C74451;
 }
 
-span {
+span{
     display: block;
     font-size: 18px;
     font-weight: 500;
     color: black;       
 }
 
-/* Header & Main Navagation */
+.clear-fix{
+       content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* Header / Page Title */
 header{
     margin-top: 25px;
 }
@@ -70,19 +80,28 @@ header:hover a{
     text-decoration: none;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    
+/* nav-bar */
+.navbar-collapse{
+    padding-left: 0;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > 
+a:hover, .navbar-default .navbar-nav > 
+.active > a:focus {    
     background-color: #C74451;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-left: -5px;
 }
 
-.navbar-default .navbar-nav > li{
-
-}
 .navbar-default .navbar-nav > li:hover{
     background-color: #C74451;
 }
 
-/* nav-bar */
+.container-fluid{
+    padding-left: 0;    
+}
 
 .navbar {
   min-height: 20px;
@@ -91,59 +110,22 @@ header:hover a{
 }
 
 .navbar-nav > li > a {
-  line-height: 15px;
-
+  line-height: 10px;
+  font-size: 15px;
+  padding-right: 30px;
+  padding-left: 25px;
 }
 
 .navbar-brand {
-  height: 20px;
+  height: 20px; 
 }
 
 .navbar-nav a{
     color: white!important;
 }
+/* nav-bar end*/
 
-
-
-/*
-nav.navbar.navbar-inverse{
-    border-width: 0;
-    border-radius: 8px;
-}
-
-nav{
-    margin:25px 0 0 0;
-    padding: 0;
-    width: 100%;
-}
-
-nav ul li a{
-    color: #fff;
-    font-size: 15px;
-    height: 25px;
-}
-
-nav ul{
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li{
-    padding: 14px 35px 15px 25px;   
-    margin: 0;
-    float: left; 
-}
-
-nav ul li:hover{
-    background-color: #C74451;
-}
-
-nav ul li a:hover{
-    color: white;
-    text-decoration: none;
-}
-*/
-/* Featured Article */
+/* Main Content Sections */
 #featured{
     margin-top: 30px;
 }
@@ -184,7 +166,6 @@ nav ul li a:hover{
     padding-right: 60px;
 }
 
-
 #featured .col-md-4 img{
     float: right;
     margin-top: 31px;
@@ -192,9 +173,9 @@ nav ul li a:hover{
     border-color: #F5F4F0;
     border-width: 2px; 
 }
+/* Main Content Sections End*/
 
 /*<!--Middle Content">-->*/
-
 .article {
     background: white;
     margin-right:0px !important;
@@ -261,7 +242,7 @@ nav ul li a:hover{
 .col-md-9 {
     padding: 15px 0 0 0;    
 }
-
+/* Middle Content End */
 
 /* Bottom Nav  */
 .black-text a{
@@ -334,7 +315,6 @@ nav ul li a:hover{
 }
 
 /* Bottom Article  */
-
 .bottom-article{
     background: white;
     margin-top: 35px;
@@ -369,28 +349,40 @@ nav ul li a:hover{
 .left-float a:hover{
     text-decoration: none;
 }
-/* Media Queries  */
-@media only screen and (max-width: 500px) {
-    .container{
-        width: 100%;
-    }
-}
 
-@media only screen and (min-width: 768px) {
+/* Media Queries  */
+
+@media all and (max-width: 767px) { 
     .container{
+        width: 100%; 
+    }
+    
+    #featured > .featured-article > .col-xs-12 {
+        padding: 0 1px;
+        
+    } 
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 991px) { 
+     .container{
         width: 85%;
     }
-}
-
-@media only screen and (min-width: 992px) {
+ }
+ 
+@media all and (min-width: 992px) and (max-width: 1199px) { 
     .container{
         width: 65%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
+    } 
+ }
+    
+@media all and (min-width: 1200px) { 
     .container{
         width: 43%;
     }
+    
+    .img-responsive{
+        display: block;
+        max-width: 200%; 
+        height: auto;
+    }
 }
-
